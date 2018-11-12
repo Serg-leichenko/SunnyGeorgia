@@ -1,0 +1,263 @@
+@import "colors"
+
+*
+	margin: 0
+	padding: 0
+
+body 
+	background: url(../img/living.jpg) no-repeat center top/cover
+	font-size: 14px
+	color: $white
+	font-family: 'PT Sans', sans-serif
+
+div 
+	box-sizing: border-box
+
+input
+	outline: none	
+
+header
+	background: $black
+	opacity: 0.6
+
+.top-nav
+	padding: 10px 0
+	&__menu
+		list-style: none
+		padding-right: 210px
+		display: flex
+		li
+			margin-left: 30px
+			a
+				font-size: 16px
+				text-decoration: none
+				color: $white
+				&:hover
+					color: $yellow
+
+
+#direction
+	display: none
+	margin-right: 210px
+
+.directions-menu
+	width: 270px
+	border-radius: 10px 10px 0 0
+	background: $yellow
+	font-size: 16px
+	color: $black
+	text-transform: uppercase
+	padding: 10px 0 15px 0
+	opacity: 0.9
+	&__title-1
+		margin-left: 30px
+	&__title-2
+		margin-left: 90px
+
+.directions-item
+	background: $black			
+	width: 270px
+	padding-top: 10px
+	padding-bottom: 15px
+	border-radius: 0 0 10px 10px
+	opacity: 0.8
+	&__see
+		margin-left: 25px
+	&__mountains
+		margin-left: 78px	
+	ul
+		list-style: none
+		padding: 0
+		li
+			margin-bottom: 10px
+			a
+				font-size: 14px
+				color: $white
+				text-decoration: none
+
+.house, .tours
+	background: $dark_blue
+	width: 290px
+	text-align: center
+	padding-top: 15px
+	margin-top: 10px
+	&__text, &__text
+		font-size: 14px
+		font-weight: 700
+		text-transform: uppercase
+		display: inline-block
+		margin-left: 20px
+
+.tours
+	background: $yellow
+	&__text
+		color: $black
+
+.start
+	padding-top: 20px
+
+.btn
+	width: 100%
+	background: $dark_blue
+	opacity: 0.8
+	padding: 20px 0
+	border-radius: 30px
+	color: $white
+	font-size: 14px
+	text-transform: uppercase
+	text-align: left
+	&::after
+		display: inline-block
+		content: ''
+		background: url(../img/arrow-2.png)
+		width: 11px
+		height: 6px
+		float: right
+		margin-right: 20px
+		margin-top: 8px
+
+.dropdown__icon
+	margin: 0 30px 0 20px	
+
+.range
+	width: 100%
+	background: $dark_blue
+	opacity: 0.8
+	padding: 20px 0
+	border-radius: 30px
+	color: $white
+	font-size: 14px
+	text-transform: uppercase
+	&__text
+		margin: 0 30px 0 25px
+	
+#amount, #amount_1
+	width: 40px
+	border: 1px solid $grey
+	border-radius: 15px
+	transform: translate
+	background: transparent
+	color: $white
+	display: flex
+	font-size: 13px
+	text-align: center
+
+#amount_1
+	margin-right: 20px	
+
+.ui-widget
+	&.ui-widget-content
+		border: 1px solid $white
+		width: 330px
+		height: 2px
+		margin: 10px 5px 0 25px
+		border: none
+
+.ui-widget-header
+		background: $yellow_range
+
+.ui-state-default, .ui-widget-content .ui-state-default
+	background: #f5e30b	
+	border: none
+	border-radius: 50%
+	margin-top: -3px
+	outline: none
+	cursor: pointer
+
+#search
+	margin: 15px 0
+	font-size: 14px
+	color: $white
+	cursor: pointer
+	img
+		margin-right: 10px	
+
+#advanced-search
+	display: none
+	padding-bottom: 200px
+
+.type_tour, .eats
+	width: 100%
+	height: auto
+	background: $dark_blue
+	opacity: 0.8
+	border-radius: 10px
+	color: $white
+	font-size: 14px
+	padding-top: 20px
+	&__title
+		border-bottom: 2px solid $white
+		p
+			font-size: 14px
+			text-transform: uppercase		
+			margin-left: 30px
+			margin-bottom: 0
+	&__list
+		display: flex
+		margin: 20px 0 0 30px
+		margin-bottom: 15px
+	&__list-item-1,
+	&__list-item-2	
+		width: 145px
+		font-size: 14px
+		text-transform: uppercase
+		margin-right: 120px
+	&__list-item-2
+		width: 175px
+		margin-right: 0
+
+input
+	display: none	
+
+label
+	position: relative
+	cursor: pointer
+
+label:before
+	content: ''
+	display: inline-block
+	width: 17px
+	height: 17px
+	border: 1px solid $yellow_check
+	cursor: pointer
+	vertical-align: middle
+	margin-right: 15px
+
+input:checked + label:after
+	content: ''url(../img/check.png)
+	display: inline-block
+	cursor: pointer
+	vertical-align: middle
+	position: absolute
+	left: 0
+	top: 3px
+
+.eats
+	height: auto
+	&__list_1,
+	&__list_2
+		width: 180px
+		font-size: 14px
+		text-transform: uppercase		
+	&__list_2
+		width: 190px
+		margin-left: 80px
+	&__list__item
+		color: $yellow_check
+
+.btn__pick_up
+	width: 165px
+	background: $yellow_range
+	text-align: center
+	padding: 20px 0
+	border-radius: 30px
+	margin: 0 auto
+	margin-top: 20px
+	a
+		font-size: 14px
+		font-weight: 700
+		color: $black
+		text-transform: uppercase
+		text-decoration: none
+
+@import "media"		
